@@ -8,7 +8,9 @@ console.log('Loading standard configuration')
 const PORT = process.env.PORT ?? 8080
 const DEBUG =
   process.env.DEBUG === undefined ? true : process.env.DEBUG === 'true'
-const API_BASE_URL = process.env.API_BASE_URL ?? 'https://eu.api.tru.id'
+// const API_BASE_URL = process.env.API_BASE_URL ?? 'https://eu.api.tru.id'
+const API_BASE_URL = process.env.API_BASE_URL ?? 'https://us.api.idlayr.com'
+
 const CLIENT_ID = process.env.TRU_ID_CLIENT_ID
 const CLIENT_SECRET = process.env.TRU_ID_CLIENT_SECRET
 const { PROJECT_PATH } = process.env
